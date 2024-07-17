@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    // $(".aside-secondary").addClass('d-none');
     $("#kt_aside_toggle").addClass('d-lg-none');
     $(".index-body").attr("data-kt-aside-minimize", "on");
 
