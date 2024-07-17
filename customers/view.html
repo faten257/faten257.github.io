@@ -1322,25 +1322,6 @@
 								<!--end::Sidebar-->
 								<!--begin::Content-->
 								<div class="flex-lg-row-fluid ms-lg-15">
-									<!--begin:::Tabs-->
-									<ul class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-semibold mb-8">
-										<!--begin:::Tab item-->
-										<li class="nav-item">
-											<a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab" href="#kt_ecommerce_customer_overview">Overview</a>
-										</li>
-										<!--end:::Tab item-->
-										<!--begin:::Tab item-->
-										<li class="nav-item">
-											<a class="nav-link text-active-primary pb-4" data-bs-toggle="tab" href="#kt_ecommerce_customer_general">General Settings</a>
-										</li>
-										<!--end:::Tab item-->
-										<!--begin:::Tab item-->
-										<li class="nav-item">
-											<a class="nav-link text-active-primary pb-4" data-bs-toggle="tab" href="#kt_ecommerce_customer_advanced">Advanced Settings</a>
-										</li>
-										<!--end:::Tab item-->
-									</ul>
-									<!--end:::Tabs-->
 									<!--begin:::Tab content-->
 									<div class="tab-content" id="myTabContent">
 										<!--begin:::Tab pane-->
@@ -1472,215 +1453,6 @@
 														</tbody>
 													</table>
 													<!--end::Table-->
-												</div>
-												<!--end::Card body-->
-											</div>
-											<!--end::Card-->
-										</div>
-										<!--end:::Tab pane-->
-										<!--begin:::Tab pane-->
-										<div class="tab-pane fade" id="kt_ecommerce_customer_general" role="tabpanel">
-											<!--begin::Card-->
-											<div class="card pt-4 mb-6 mb-xl-9">
-												<!--begin::Card header-->
-												<div class="card-header border-0">
-													<!--begin::Card title-->
-													<div class="card-title">
-														<h2>Profile</h2>
-													</div>
-													<!--end::Card title-->
-												</div>
-												<!--end::Card header-->
-												<!--begin::Card body-->
-												<div class="card-body pt-0 pb-5">
-													<!--begin::Form-->
-													<form class="form" action="#" id="kt_ecommerce_customer_profile">
-														<!--begin::Input group-->
-														<div class="mb-7">
-															<!--begin::Label-->
-															<label class="fs-6 fw-semibold mb-2">
-																<span>Update Avatar</span>
-																<span class="ms-1" data-bs-toggle="tooltip" title="Allowed file types: png, jpg, jpeg.">
-																	<i class="ki-duotone ki-information fs-7">
-																		<span class="path1"></span>
-																		<span class="path2"></span>
-																		<span class="path3"></span>
-																	</i>
-																</span>
-															</label>
-															<!--end::Label-->
-															<!--begin::Image input wrapper-->
-															<div class="mt-1">
-																<!--begin::Image input placeholder-->
-																<style>.image-input-placeholder { background-image: url('assets/media/svg/files/blank-image.svg'); } [data-bs-theme="dark"] .image-input-placeholder { background-image: url('assets/media/svg/files/blank-image-dark.svg'); }</style>
-																<!--end::Image input placeholder-->
-																<!--begin::Image input-->
-																<div class="image-input image-input-outline image-input-placeholder" data-kt-image-input="true">
-																	<!--begin::Preview existing avatar-->
-																	<div class="image-input-wrapper w-125px h-125px" style="background-image: url(assets/media/avatars/300-1.jpg)"></div>
-																	<!--end::Preview existing avatar-->
-																	<!--begin::Edit-->
-																	<label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
-																		<i class="ki-duotone ki-pencil fs-7">
-																			<span class="path1"></span>
-																			<span class="path2"></span>
-																		</i>
-																		<!--begin::Inputs-->
-																		<input type="file" name="avatar" accept=".png, .jpg, .jpeg" />
-																		<input type="hidden" name="avatar_remove" />
-																		<!--end::Inputs-->
-																	</label>
-																	<!--end::Edit-->
-																	<!--begin::Cancel-->
-																	<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel avatar">
-																		<i class="ki-duotone ki-cross fs-2">
-																			<span class="path1"></span>
-																			<span class="path2"></span>
-																		</i>
-																	</span>
-																	<!--end::Cancel-->
-																	<!--begin::Remove-->
-																	<span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow" data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
-																		<i class="ki-duotone ki-cross fs-2">
-																			<span class="path1"></span>
-																			<span class="path2"></span>
-																		</i>
-																	</span>
-																	<!--end::Remove-->
-																</div>
-																<!--end::Image input-->
-															</div>
-															<!--end::Image input wrapper-->
-														</div>
-														<!--end::Input group-->
-														<!--begin::Input group-->
-														<div class="fv-row mb-7">
-															<!--begin::Label-->
-															<label class="fs-6 fw-semibold mb-2 required">Name</label>
-															<!--end::Label-->
-															<!--begin::Input-->
-															<input type="text" class="form-control form-control-solid" placeholder="" name="name" value="Yahia Ahmed" />
-															<!--end::Input-->
-														</div>
-														<!--end::Input group-->
-														<!--begin::Row-->
-														<div class="row row-cols-1 row-cols-md-2">
-															<!--begin::Col-->
-															<div class="col">
-																<!--begin::Input group-->
-																<div class="fv-row mb-7">
-																	<!--begin::Label-->
-																	<label class="fs-6 fw-semibold mb-2">
-																		<span class="required">General Email</span>
-																		<span class="ms-1" data-bs-toggle="tooltip" title="Email address must be active">
-																			<i class="ki-duotone ki-information fs-7">
-																				<span class="path1"></span>
-																				<span class="path2"></span>
-																				<span class="path3"></span>
-																			</i>
-																		</span>
-																	</label>
-																	<!--end::Label-->
-																	<!--begin::Input-->
-																	<input type="email" class="form-control form-control-solid" placeholder="" name="gen_email" value="yahia@gmail.com" />
-																	<!--end::Input-->
-																</div>
-																<!--end::Input group-->
-															</div>
-															<!--end::Col-->
-															<!--begin::Col-->
-															<div class="col">
-																<!--begin::Input group-->
-																<div class="fv-row mb-7">
-																	<!--begin::Label-->
-																	<label class="fs-6 fw-semibold mb-2">
-																		<span>Billing Email</span>
-																		<span class="ms-1" data-bs-toggle="tooltip" title="Email address must be active">
-																			<i class="ki-duotone ki-information fs-7">
-																				<span class="path1"></span>
-																				<span class="path2"></span>
-																				<span class="path3"></span>
-																			</i>
-																		</span>
-																	</label>
-																	<!--end::Label-->
-																	<!--begin::Input-->
-																	<input type="email" class="form-control form-control-solid" placeholder="" name="bill_email" value="yahia@gmail.com" />
-																	<!--end::Input-->
-																</div>
-																<!--end::Input group-->
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Row-->
-														<div class="d-flex justify-content-end">
-															<!--begin::Button-->
-															<button type="submit" id="kt_ecommerce_customer_profile_submit" class="btn btn-light-primary">
-																<span class="indicator-label">Save</span>
-																<span class="indicator-progress">Please wait... 
-																<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-															</button>
-															<!--end::Button-->
-														</div>
-													</form>
-													<!--end::Form-->
-												</div>
-												<!--end::Card body-->
-											</div>
-											<!--end::Card-->
-										</div>
-										<!--end:::Tab pane-->
-										<!--begin:::Tab pane-->
-										<div class="tab-pane fade" id="kt_ecommerce_customer_advanced" role="tabpanel">
-											<!--begin::Card-->
-											<div class="card pt-4 mb-6 mb-xl-9">
-												<!--begin::Card header-->
-												<div class="card-header border-0">
-													<!--begin::Card title-->
-													<div class="card-title">
-														<h2>Security Details</h2>
-													</div>
-													<!--end::Card title-->
-												</div>
-												<!--end::Card header-->
-												<!--begin::Card body-->
-												<div class="card-body pt-0 pb-5">
-													<!--begin::Table wrapper-->
-													<div class="table-responsive">
-														<!--begin::Table-->
-														<table class="table align-middle table-row-dashed gy-5" id="kt_table_users_login_session">
-															<!--begin::Table body-->
-															<tbody class="fs-6 fw-semibold text-gray-600">
-																<tr>
-																	<td>Phone</td>
-																	<td>+6141 234 567</td>
-																	<td class="text-end">
-																		<button type="button" class="btn btn-icon btn-active-light-primary w-30px h-30px ms-auto" data-bs-toggle="modal" data-bs-target="#kt_modal_update_phone">
-																			<i class="ki-duotone ki-pencil fs-3">
-																				<span class="path1"></span>
-																				<span class="path2"></span>
-																			</i>
-																		</button>
-																	</td>
-																</tr>
-																<tr>
-																	<td>Password</td>
-																	<td>******</td>
-																	<td class="text-end">
-																		<button type="button" class="btn btn-icon btn-active-light-primary w-30px h-30px ms-auto" data-bs-toggle="modal" data-bs-target="#kt_modal_update_password">
-																			<i class="ki-duotone ki-pencil fs-3">
-																				<span class="path1"></span>
-																				<span class="path2"></span>
-																			</i>
-																		</button>
-																	</td>
-																</tr>
-															</tbody>
-															<!--end::Table body-->
-														</table>
-														<!--end::Table-->
-													</div>
-													<!--end::Table wrapper-->
 												</div>
 												<!--end::Card body-->
 											</div>
@@ -2834,7 +2606,7 @@
 		<!--end::Root-->
 		<!--begin::Drawers-->
 		<!--begin::Activities drawer-->
-		<div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'lg': '900px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activities_close">
+		<div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'lg': '700px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activities_close">
 			<div class="card shadow-none border-0 rounded-0">
 				<!--begin::Header-->
 				<div class="card-header" id="kt_activities_header">
@@ -2872,7 +2644,7 @@
 								<!--begin::Timeline content-->
 								<div class="timeline-content mb-10 mt-n1">
 									<!--begin::Timeline heading-->
-									<div class="pe-3 mb-5">
+									<div class="overflow-auto pe-3">
 										<!--begin::Title-->
 										<div class="fs-5 fw-semibold mb-2">There are 2 new tasks for you in “AirPlus Mobile App” project:</div>
 										<!--end::Title-->
@@ -2890,83 +2662,6 @@
 										<!--end::Description-->
 									</div>
 									<!--end::Timeline heading-->
-									<!--begin::Timeline details-->
-									<div class="overflow-auto pb-5">
-										<!--begin::Record-->
-										<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-5">
-											<!--begin::Title-->
-											<a href="apps/projects/project.html" class="fs-5 text-gray-900 text-hover-primary fw-semibold w-375px min-w-200px">Meeting with customer</a>
-											<!--end::Title-->
-											<!--begin::Label-->
-											<div class="min-w-175px pe-2">
-												<span class="badge badge-light text-muted">Application Design</span>
-											</div>
-											<!--end::Label-->
-											<!--begin::Users-->
-											<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px pe-2">
-												<!--begin::User-->
-												<div class="symbol symbol-circle symbol-25px">
-													<img src="assets/media/avatars/300-2.jpg" alt="img" />
-												</div>
-												<!--end::User-->
-												<!--begin::User-->
-												<div class="symbol symbol-circle symbol-25px">
-													<img src="assets/media/avatars/300-14.jpg" alt="img" />
-												</div>
-												<!--end::User-->
-												<!--begin::User-->
-												<div class="symbol symbol-circle symbol-25px">
-													<div class="symbol-label fs-8 fw-semibold bg-primary text-inverse-primary">A</div>
-												</div>
-												<!--end::User-->
-											</div>
-											<!--end::Users-->
-											<!--begin::Progress-->
-											<div class="min-w-125px pe-2">
-												<span class="badge badge-light-primary">In Progress</span>
-											</div>
-											<!--end::Progress-->
-											<!--begin::Action-->
-											<a href="apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
-											<!--end::Action-->
-										</div>
-										<!--end::Record-->
-										<!--begin::Record-->
-										<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-0">
-											<!--begin::Title-->
-											<a href="apps/projects/project.html" class="fs-5 text-gray-900 text-hover-primary fw-semibold w-375px min-w-200px">Project Delivery Preparation</a>
-											<!--end::Title-->
-											<!--begin::Label-->
-											<div class="min-w-175px">
-												<span class="badge badge-light text-muted">CRM System Development</span>
-											</div>
-											<!--end::Label-->
-											<!--begin::Users-->
-											<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px">
-												<!--begin::User-->
-												<div class="symbol symbol-circle symbol-25px">
-													<img src="assets/media/avatars/300-20.jpg" alt="img" />
-												</div>
-												<!--end::User-->
-												<!--begin::User-->
-												<div class="symbol symbol-circle symbol-25px">
-													<div class="symbol-label fs-8 fw-semibold bg-success text-inverse-primary">B</div>
-												</div>
-												<!--end::User-->
-											</div>
-											<!--end::Users-->
-											<!--begin::Progress-->
-											<div class="min-w-125px">
-												<span class="badge badge-light-success">Completed</span>
-											</div>
-											<!--end::Progress-->
-											<!--begin::Action-->
-											<a href="apps/projects/project.html" class="btn btn-sm btn-light btn-active-light-primary">View</a>
-											<!--end::Action-->
-										</div>
-										<!--end::Record-->
-									</div>
-									<!--end::Timeline details-->
 								</div>
 								<!--end::Timeline content-->
 							</div>
@@ -3028,7 +2723,7 @@
 								<!--begin::Timeline content-->
 								<div class="timeline-content mb-10 mt-n1">
 									<!--begin::Timeline heading-->
-									<div class="mb-5 pe-3">
+									<div class="overflow-auto pe-3">
 										<!--begin::Title-->
 										<a href="#" class="fs-5 fw-semibold text-gray-800 text-hover-primary mb-2">3 New Incoming Project Files:</a>
 										<!--end::Title-->
@@ -3046,63 +2741,6 @@
 										<!--end::Description-->
 									</div>
 									<!--end::Timeline heading-->
-									<!--begin::Timeline details-->
-									<div class="overflow-auto pb-5">
-										<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-5">
-											<!--begin::Item-->
-											<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
-												<!--begin::Icon-->
-												<img alt="" class="w-30px me-3" src="assets/media/svg/files/pdf.svg" />
-												<!--end::Icon-->
-												<!--begin::Info-->
-												<div class="ms-1 fw-semibold">
-													<!--begin::Desc-->
-													<a href="apps/projects/project.html" class="fs-6 text-hover-primary fw-bold">Finance KPI App Guidelines</a>
-													<!--end::Desc-->
-													<!--begin::Number-->
-													<div class="text-gray-500">1.9mb</div>
-													<!--end::Number-->
-												</div>
-												<!--begin::Info-->
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
-												<!--begin::Icon-->
-												<img alt="apps/projects/project.html" class="w-30px me-3" src="assets/media/svg/files/doc.svg" />
-												<!--end::Icon-->
-												<!--begin::Info-->
-												<div class="ms-1 fw-semibold">
-													<!--begin::Desc-->
-													<a href="#" class="fs-6 text-hover-primary fw-bold">Client UAT Testing Results</a>
-													<!--end::Desc-->
-													<!--begin::Number-->
-													<div class="text-gray-500">18kb</div>
-													<!--end::Number-->
-												</div>
-												<!--end::Info-->
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="d-flex flex-aligns-center">
-												<!--begin::Icon-->
-												<img alt="apps/projects/project.html" class="w-30px me-3" src="assets/media/svg/files/css.svg" />
-												<!--end::Icon-->
-												<!--begin::Info-->
-												<div class="ms-1 fw-semibold">
-													<!--begin::Desc-->
-													<a href="#" class="fs-6 text-hover-primary fw-bold">Finance Reports</a>
-													<!--end::Desc-->
-													<!--begin::Number-->
-													<div class="text-gray-500">20mb</div>
-													<!--end::Number-->
-												</div>
-												<!--end::Icon-->
-											</div>
-											<!--end::Item-->
-										</div>
-									</div>
-									<!--end::Timeline details-->
 								</div>
 								<!--end::Timeline content-->
 							</div>
@@ -3123,7 +2761,7 @@
 								<!--begin::Timeline content-->
 								<div class="timeline-content mb-10 mt-n1">
 									<!--begin::Timeline heading-->
-									<div class="pe-3 mb-5">
+									<div class="overflow-auto pe-3">
 										<!--begin::Title-->
 										<div class="fs-5 fw-semibold mb-2">Task 
 										<a href="#" class="text-primary fw-bold me-1">#45890</a>merged with 
@@ -3163,7 +2801,7 @@
 								<!--begin::Timeline content-->
 								<div class="timeline-content mb-10 mt-n1">
 									<!--begin::Timeline heading-->
-									<div class="pe-3 mb-5">
+									<div class="overflow-auto pe-3">
 										<!--begin::Title-->
 										<div class="fs-5 fw-semibold mb-2">3 new application design concepts added:</div>
 										<!--end::Title-->
@@ -3181,54 +2819,6 @@
 										<!--end::Description-->
 									</div>
 									<!--end::Timeline heading-->
-									<!--begin::Timeline details-->
-									<div class="overflow-auto pb-5">
-										<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-7">
-											<!--begin::Item-->
-											<div class="overlay me-10">
-												<!--begin::Image-->
-												<div class="overlay-wrapper">
-													<img alt="img" class="rounded w-150px" src="assets/media/stock/600x400/img-29.jpg" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Link-->
-												<div class="overlay-layer bg-dark bg-opacity-10 rounded">
-													<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
-												</div>
-												<!--end::Link-->
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="overlay me-10">
-												<!--begin::Image-->
-												<div class="overlay-wrapper">
-													<img alt="img" class="rounded w-150px" src="assets/media/stock/600x400/img-31.jpg" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Link-->
-												<div class="overlay-layer bg-dark bg-opacity-10 rounded">
-													<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
-												</div>
-												<!--end::Link-->
-											</div>
-											<!--end::Item-->
-											<!--begin::Item-->
-											<div class="overlay">
-												<!--begin::Image-->
-												<div class="overlay-wrapper">
-													<img alt="img" class="rounded w-150px" src="assets/media/stock/600x400/img-40.jpg" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Link-->
-												<div class="overlay-layer bg-dark bg-opacity-10 rounded">
-													<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
-												</div>
-												<!--end::Link-->
-											</div>
-											<!--end::Item-->
-										</div>
-									</div>
-									<!--end::Timeline details-->
 								</div>
 								<!--end::Timeline content-->
 							</div>
@@ -3249,13 +2839,13 @@
 								<!--begin::Timeline content-->
 								<div class="timeline-content mb-10 mt-n1">
 									<!--begin::Timeline heading-->
-									<div class="pe-3 mb-5">
+									<div class="overflow-auto pe-3">
 										<!--begin::Title-->
 										<div class="fs-5 fw-semibold mb-2">New case 
 										<a href="#" class="text-primary fw-bold me-1">#67890</a>is assigned to you in Multi-platform Database Design project</div>
 										<!--end::Title-->
 										<!--begin::Description-->
-										<div class="overflow-auto pb-5">
+										<div class="overflow-auto">
 											<!--begin::Wrapper-->
 											<div class="d-flex align-items-center mt-1 fs-6">
 												<!--begin::Info-->
@@ -3290,7 +2880,7 @@
 								<!--begin::Timeline content-->
 								<div class="timeline-content mb-10 mt-n1">
 									<!--begin::Timeline heading-->
-									<div class="pe-3 mb-5">
+									<div class="overflow-auto pe-3">
 										<!--begin::Title-->
 										<div class="fs-5 fw-semibold mb-2">You have received a new order:</div>
 										<!--end::Title-->
@@ -3308,34 +2898,6 @@
 										<!--end::Description-->
 									</div>
 									<!--end::Timeline heading-->
-									<!--begin::Timeline details-->
-									<div class="overflow-auto pb-5">
-										<!--begin::Notice-->
-										<div class="notice d-flex bg-light-primary rounded border-primary border border-dashed min-w-lg-600px flex-shrink-0 p-6">
-											<!--begin::Icon-->
-											<i class="ki-duotone ki-devices-2 fs-2tx text-primary me-4">
-												<span class="path1"></span>
-												<span class="path2"></span>
-												<span class="path3"></span>
-											</i>
-											<!--end::Icon-->
-											<!--begin::Wrapper-->
-											<div class="d-flex flex-stack flex-grow-1 flex-wrap flex-md-nowrap">
-												<!--begin::Content-->
-												<div class="mb-3 mb-md-0 fw-semibold">
-													<h4 class="text-gray-900 fw-bold">Database Backup Process Completed!</h4>
-													<div class="fs-6 text-gray-700 pe-7">Login into Admin Dashboard to make sure the data integrity is OK</div>
-												</div>
-												<!--end::Content-->
-												<!--begin::Action-->
-												<a href="#" class="btn btn-primary px-6 align-self-center text-nowrap">Proceed</a>
-												<!--end::Action-->
-											</div>
-											<!--end::Wrapper-->
-										</div>
-										<!--end::Notice-->
-									</div>
-									<!--end::Timeline details-->
 								</div>
 								<!--end::Timeline content-->
 							</div>
@@ -3358,7 +2920,7 @@
 								<!--begin::Timeline content-->
 								<div class="timeline-content mt-n1">
 									<!--begin::Timeline heading-->
-									<div class="pe-3 mb-5">
+									<div class="overflow-auto pe-3">
 										<!--begin::Title-->
 										<div class="fs-5 fw-semibold mb-2">New order 
 										<a href="#" class="text-primary fw-bold me-1">#67890</a>is placed for Workshow Planning & Budget Estimation</div>

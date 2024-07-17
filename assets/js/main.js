@@ -15,4 +15,19 @@ $(document).ready(function(){
         $("#kt_aside_toggle").addClass('d-lg-none');
         $("#kt_body").attr("data-kt-aside-minimize", "on");
     });
+
+    
+    $('#kt_aside_mobile_toggle').click(function(){
+        $("#kt_aside").attr('style', 'width: 70px !important; overflow: hidden !important');
+    });
+
+    $('.drawer .aside-nav .nav-item').click(function(){
+        $("#kt_aside").attr('style', 'width: 300 !important; overflow: auto !important');
+    });
+    $('.drawer .aside-nav .nav-item-dashboard').click(function(){
+        $("#kt_aside").attr('style', 'width: 70px !important; overflow: hidden !important');
+    });
+    $('.drawer .aside-footer .btn-setting').click(function(){
+        $("#kt_aside").attr('style', 'width: 70px !important; overflow: hidden !important');
+    });
 });
