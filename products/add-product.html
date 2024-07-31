@@ -1362,28 +1362,68 @@
 															<!--end::Description-->
 														</div>
 														<!--end::Input group-->
-														<!--begin::Input group-->
-														<div class="mb-10 fv-row">
+														<!--begin::Custom fields-->
+														<div class="d-flex flex-column mb-15 fv-row">
 															<!--begin::Label-->
-															<label class="required form-label">Additions</label>
+															<div class="form-label">Additions 
+															<span class="ms-2 cursor-pointer" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Add custom price for every addition.">
+																<i class="ki-duotone ki-information fs-7">
+																	<span class="path1"></span>
+																	<span class="path2"></span>
+																	<span class="path3"></span>
+																</i>
+															</span></div>
 															<!--end::Label-->
-															<!--begin::Input-->
-															<div class="mb-2">
-																	<!--begin::Select2-->
-																	<select class="form-select form-select-solid" multiple="multiple" data-close-on-select="false" data-allow-clear="true" name="additions" data-control="select2" data-hide-search="true" data-placeholder="Select Additions ">
-																		<option></option>
-																		<option value="cm" selected="selected">Tomato</option>
-																		<option value="mm">Lettuce</option>
-																		<option value="in">Mushroom</option>
-																	</select>
-																	<!--end::Select2-->
-																</div>
-															<!--end::Input-->
-															<!--begin::Description-->
-															<div class="text-muted fs-7">Additions is required.</div>
-															<!--end::Description-->
+															<!--begin::Table wrapper-->
+															<div class="table-responsive">
+																<!--begin::Table-->
+																<table id="kt_create_new_custom_fields" class="table align-middle table-row-dashed fw-semibold fs-6 gy-5">
+																	<!--begin::Table head-->
+																	<thead>
+																		<tr class="text-start text-muted fw-bold fs-7 gs-0">
+																			<th class="pt-0">Addition</th>
+																			<th class="pt-0">Price</th>
+																			<th class="pt-0 text-end">Remove</th>
+																		</tr>
+																	</thead>
+																	<!--end::Table head-->
+																	<!--begin::Table body-->
+																	<tbody>
+																		<tr>
+																			<td>
+																				<select class="form-select form-control form-control-solid" name="addition" data-hide-search="true" data-placeholder="Select Addition">
+																					<option>Select Addition</option>
+																					<option value="Tomato" selected="selected">Tomato</option>
+																					<option value="Lettuce">Lettuce</option>
+																					<option value="Mushroom">Mushroom</option>
+																				</select>
+																			</td>
+																			<td>
+																				<input type="number" class="form-control form-control-solid" name="size-price" value="" />
+																			</td>
+																			<td class="text-end">
+																				<button type="button" class="btn btn-icon btn-flex btn-active-light-primary w-30px h-30px me-3" data-kt-action="field_remove">
+																					<i class="ki-duotone ki-trash fs-3">
+																						<span class="path1"></span>
+																						<span class="path2"></span>
+																						<span class="path3"></span>
+																						<span class="path4"></span>
+																						<span class="path5"></span>
+																					</i>
+																				</button>
+																			</td>
+																		</tr>
+																	</tbody>
+																	<!--end::Table body-->
+																</table>
+																<!--end:Table-->
+															</div>
+															<!--end::Table wrapper-->
+															<!--begin::Add custom field-->
+															<button type="button" class="btn btn-light-primary me-auto" id="kt_create_new_custom_fields_add">Add custom addition</button>
+															<!--end::Add custom field-->
 														</div>
-														<!--end::Input group-->
+														<!--end::Custom fields-->
 														<!--begin::Input group-->
 														<div class="mb-10 fv-row">
 															<!--begin::Label-->
@@ -1406,32 +1446,10 @@
 															<!--end::Description-->
 														</div>
 														<!--end::Input group-->
-														<!--begin::Input group-->
-														<div class="mb-10 fv-row">
-															<!--begin::Label-->
-															<label class="required form-label">Size</label>
-															<!--end::Label-->
-															<!--begin::Input-->
-															<div class="mb-2">
-																	<!--begin::Select2-->
-																	<select class="form-select form-select-solid" multiple="multiple" data-close-on-select="false" data-allow-clear="true" name="size" data-control="select2" data-hide-search="true" data-placeholder="Select Size">
-																		<option></option>
-																		<option value="cm" selected="selected">L</option>
-																		<option value="mm">M</option>
-																		<option value="in">XL</option>
-																	</select>
-																	<!--end::Select2-->
-																</div>
-															<!--end::Input-->
-															<!--begin::Description-->
-															<div class="text-muted fs-7">Size is required.</div>
-															<!--end::Description-->
-														</div>
-														<!--end::Input group-->
 														<!--begin::Custom fields-->
 														<div class="d-flex flex-column mb-15 fv-row">
 															<!--begin::Label-->
-															<div class="fs-5 fw-bold form-label mb-3">Size Options 
+															<div class="form-label">Size Options 
 															<span class="ms-2 cursor-pointer" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-html="true" data-bs-content="Add custom price for size options.">
 																<i class="ki-duotone ki-information fs-7">
 																	<span class="path1"></span>
